@@ -17,9 +17,6 @@ jobs:
             - node_modules
           key: 'v1-dependencies-{{ checksum "package.json" }}'
       - run:
-          name: 'Karma Unit Test'
-          command: 'npm run test'
-      - run:
           name: 'Build Project'
           command: 'npm run build'
       - run:
